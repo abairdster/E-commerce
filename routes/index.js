@@ -1,17 +1,10 @@
-const express = require('express');
-const router = express.Router();
+const router = require('express').Router();
+const apiRoutes = require('./api');
 
-router.get("/",(req,res)=>{
-    res.send("welcome to my application!")
-})
+router.use('/api', apiRoutes);
 
-const product_tagRoutes = require("./product_tagRoutes");
-router.use("/api/product_tag",Routes)
-
-const productRoutes = require("./productRoutes");
-router.use("/api/product",productRoutes)
-
-const tagRoutes = require("./tagRoutes");
-router.use("/api/tag",toyRoutes)
+router.use((req, res) => {
+  res.send("<h1>Wrong Route!</h1>")
+});
 
 module.exports = router;

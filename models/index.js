@@ -1,17 +1,20 @@
-const express = require('express');
-const router = express.Router();
+// import models
+const Product = require('./Product');
+const Category = require('./Category');
+const Tag = require('./Tag');
+const ProductTag = require('./ProductTag');
 
-router.get("/",(req,res)=>{
-    res.send("welcome to my application!")
-})
+// Products belongsTo Category
 
-const userRoutes = require("./product_tagRoutes");
-router.use("/api/users",userRoutes)
+// Categories have many Products
 
-const petRoutes = require("./productRoutes");
-router.use("/api/pets",petRoutes)
+// Products belongToMany Tags (through ProductTag)
 
-const toyRoutes = require("./tagRoutes");
-router.use("/api/toys",toyRoutes)
+// Tags belongToMany Products (through ProductTag)
 
-module.exports = router;
+module.exports = {
+  Product,
+  Category,
+  Tag,
+  ProductTag,
+};
