@@ -1,8 +1,11 @@
 # <center>_E-commerce_</center>
-[DEMO]()
-##### <center>_Description_</center>
 
-A command-line application for managing a company's employees using node, inquirer, and MySQL.
+
+
+>Completely Unfinished Project
+![Completed Folders](./assets/ecommerce_index..png)
+
+A command-line application for managing a company's employees using node, inquirer, and MySQL. 
 
 ### <center>_Getting Started_</center>
 
@@ -17,7 +20,17 @@ A command-line application for managing a company's employees using node, inquir
 - [Stack Overflow](https://stackoverflow.com)
 
 
+
+
+
+
+![routes](./assets/ecommerce_routes.png)
+
+
+
+
 ## <center>_Installing_</center>
+
 
 - This application also need to install mysql on your computer, please refer to [mysql website](https://www.mysql.com/downloads/) for installation
 - Change password in ```.env``` to your root user password of your mysql DBMS.
@@ -35,16 +48,13 @@ A command-line application for managing a company's employees using node, inquir
     ```
     npm start
     ```
-
+![Work in progress](./assets/ecommerce_index..png)
 
 - This application need node.js, please refer to [Node Package Manager](https://nodejs.org/en/download/) for installation
-- download this repo by running
-  ```bash
-  git clone: https://github.com/abairdster/
-  ```
+
 
 ## _Authors_
 
-- [abairdster](https://github.com/abairdster)
+- [abairdster](https://github.com/abairdster/E-commerce)
 
 ![GitHub](https://img.shields.io/github/license/abairdster/Team-Profile-Generator?color=%2339FF14)
